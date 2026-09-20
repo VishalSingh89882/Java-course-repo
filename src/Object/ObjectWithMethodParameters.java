@@ -1,0 +1,18 @@
+package Object;
+
+public class ObjectWithMethodParameters {
+
+    public static void main(String[] args) {
+
+        Rectangle kitchen = new Rectangle(400,100);
+        Rectangle bathroom = new Rectangle(200,50);
+        double area = calculateTotalArea(kitchen,bathroom);
+
+        System.out.println("The total area of room is : " + area);
+    }
+
+    public static double  calculateTotalArea(Rectangle rectangle1, Rectangle rectangle2)
+    {
+        return rectangle1.calculateArea() + rectangle2.calculateArea();
+    }
+}
